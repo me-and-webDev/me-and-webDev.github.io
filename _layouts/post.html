@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container post flow-text">
+  <header>
+    <h1 class="deep-purple-text text-darken-3">{{ page.title }}</h1>
+    <p>{{ page.introPhrase }}</p>
+    <div>
+      <p><b>{{ page.author }}</b> - em {{ page.date | date: "%d/%m/%Y" }}</p>
+      {% for tag in page.tags %}
+        {% include tag.html %}
+      {% endfor %}
+    </div>
+  </header>
+  {{ content }}
+  {% include fab-share.html %}
+</div>

@@ -1,0 +1,15 @@
+<div
+{% if tag == "JavaScript" %}
+  class="chip yellow darken-2"
+{% elsif tag == "CSS" %}
+  class="chip blue"
+{% elsif tag == "HTML" %}
+  class="chip orange darken-4"
+{% elsif tag == "Python" %}
+  class="chip light-green accent-4"
+{% else %}
+  class="chip"
+{% endif %}
+>
+  {{ tag }}
+</div>

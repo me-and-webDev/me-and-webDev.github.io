@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="container section row">
+  {% assign filteredPosts = site.posts | where: "section", page.section %}
+  {% for post in filteredPosts %}
+    {% if post.horizontal %}
+      {% include feed-post-horizontal.html %}
+    {% else %}
+      {% include feed-post-vertical.html %}
+    {% endif %}
+  {% endfor %}
+</div>

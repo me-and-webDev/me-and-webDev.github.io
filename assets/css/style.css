@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono');
+
+body {
+  background-color: #f3e5f5;
+  /* As mudanças a seguir são para manter o footer
+  no fim da página independente da quaintidade de conteúdo */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  /* Manter o footer no fim da página */
+  flex: 1 0 auto;
+}
+
+/* Ajustes para a barra de navegação */
+nav .brand-logo {
+  position: inherit;
+  display: inline-block;
+  height: 100%;
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    left: calc(100% - 138px)
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  nav .brand-logo {
+    left: calc(100% - 218px)
+  }
+}
+
+.brand-logo .logo-text {
+  position: relative;
+  margin-left: 55px;
+  font-family: 'Oxygen Mono';
+  word-spacing: -10px;
+}
+
+.brand-logo img {
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav ul li {
+  font-weight: bold;
+}
+
+nav ul li:hover, nav ul li.active {
+  background-color: rgba(237, 231, 246, .2);
+}
+
+#navbar-mobile {
+  transition: top 0.3s ease-in-out;
+}
+
+#mobile-nav li a {
+  color: #673ab7;
+}
+
+#mobile-nav li:hover, #mobile-nav li.active {
+  background-color: #ede7f6;
+}
+
+#mobile-nav .input-field {
+  margin: 0;
+}
+
+#mobile-nav input[type=search] {
+  padding: 0 14%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#mobile-nav i[onclick] {
+  top: 15%;
+}
+
+#modal-search .modal-content {
+  padding: 10px;
+}
+/* Fim dos ajustes para a barra de navegação */
+
+/* Ajustes para o início da página */
+.card .card-title {
+  font-weight: 400;
+}
+
+.card.horizontal .card-content {
+  max-height: 81%;
+}
+
+.card.horizontal .card-content .left {
+  margin: 8% 0;
+}
+
+.card-action {
+  font-weight: 500;
+}
+/* Fim dos ajustes do início da página */
+
+/* Ajustes para posts */
+.post header {
+  border-bottom: solid 1px #7e57c2;
+  margin-bottom: 5%;
+  padding: 0 1%;
+}
+
+.post header > p {
+  width: 100%;
+}
+
+.post header div {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.post header div p {
+  display: inline-block;
+  width: 40%;
+}
+
+.post header .chip {
+  float: right;
+  margin: 15px 5px;
+
+}
+
+.post h1 {
+  font-weight: 500;
+}
+
+.post h2 {
+  width: 72%;
+  margin: 5% auto 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .post h1 {
+    font-size: 240%;
+  }
+
+  .post h2 {
+    width: 100%;
+    font-size: 230%;
+  }
+}
+
+.post p {
+  width: 72%;
+  margin: 15px auto;
+  font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+  .post p {
+    width: 100%;
+  }
+}
+/* Fim dos ajustes para posts */
+
+/* Ajustes para o FAB */
+.fixed-action-btn {
+  right: 15%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .fixed-action-btn {
+    right: 8%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fixed-action-btn {
+    right: 5%;
+  }
+}
+/* Fim dos ajustes para o FAB */
+
+/* Ajustes para o paginator */
+.pagination li.active {
+  background-color: #7e57c2;
+}
+/* Fim dos ajustes para o paginator */
+
+/* Ajustes para o layout das sessões */
+/* .container.section .card {
+  width: 70%;
+} */
+/* Fim dos ajustes para o layout das sessões */
+
+/* Ajustes para o rodapé */
+  .page-footer .row {
+    margin-bottom: 0;
+  }
+/* Fim dos ajustes para o dapé */

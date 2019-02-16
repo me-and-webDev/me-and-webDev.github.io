@@ -1,0 +1,11 @@
+---
+title: Blog
+layout: default
+---
+<div class="container row">
+  {% for post in paginator.posts %}
+    {% include feed-post-vertical.html %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}

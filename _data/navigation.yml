@@ -1,0 +1,6 @@
+- name: Notícias
+  link: /noticias
+- name: Tutoriais
+  link: /tutoriais
+- name: Artigos
+  link: /artigos
