@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container section row">
+
+  {% if page.pagination.tags %}
+    <h1>Todos os posts da categoria {{ page.pagination.tags }}</h1>
+  {% endif %}
+
+  {% for post in paginator.posts %}
+    {% if post.horizontal %}
+      {% include feed-post-horizontal.html %}
+    {% else %}
+      {% include feed-post-vertical.html %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}
