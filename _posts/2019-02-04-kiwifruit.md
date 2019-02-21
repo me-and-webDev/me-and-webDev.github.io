@@ -3,9 +3,8 @@ title: Kiwi
 layout: post
 author: ted
 horizontal: true
-tags: [HTML, Python]
+tags: [Artigos, HTML, Python]
 image: http://lorempixel.com/400/200/sports
-section: "Notícias"
 introPhrase: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible

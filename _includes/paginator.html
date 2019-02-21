@@ -1,34 +1,44 @@
 {% if paginator.total_pages > 1 %}
   <ul class="pagination center-align">
     {% if paginator.previous_page %}
-      <li>
+      <li class="waves-effect">
+        <a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          <i class="material-icons">first_page</i>
+        </a>
+      </li>
+      <li class="waves-effect">
         <a href="{{ paginator.previous_page_path | relative_url }}">
           <i class="material-icons">chevron_left</i>
         </a>
       </li>
     {% else %}
       <li class="disabled">
-        <a href="{{ paginator.previous_page_path | relative_url }}">
+        <a href="#!">
+          <i class="material-icons">first_page</i>
+        </a>
+      </li>
+      <li class="disabled">
+        <a href="#!">
           <i class="material-icons">chevron_left</i>
         </a>
       </li>
     {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <li class="active"><a href="#!">{{ page }}</a></li>
-      {% elsif page == 1 %}
-        <li>
-          <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
-        </li>
-      {% else %}
-        <li class="waves-effect">
-          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
-            {{ page }}
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
+    {% if paginator.page_trail %}
+      {% for trail in paginator.page_trail %}
+        {% if trail.path == page.url %}
+          <li class="active">
+            <a href="#!">{{ trail.num }}</a>
+          </li>
+        {% else %}
+          <li class="waves-effect">
+            <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}">
+              {{ trail.num }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
 
     {% if paginator.next_page %}
       <li class="waves-effect">
@@ -36,10 +46,20 @@
           <i class="material-icons">chevron_right</i>
         </a>
       </li>
+      <li class="waves-effect">
+        <a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          <i class="material-icons">last_page</i>
+        </a>
+      </li>
     {% else %}
-      <li class="waves-effect disabled">
-        <a href="{{ paginator.next_page_path | relative_url }}">
+      <li class="disabled">
+        <a href="#!">
           <i class="material-icons">chevron_right</i>
+        </a>
+      </li>
+      <li class="disabled">
+        <a href="#!">
+          <i class="material-icons">last_page</i>
         </a>
       </li>
     {% endif %}

@@ -1,11 +1,7 @@
 ---
 title: Blog
-layout: default
+layout: paginated
+permalink: /blog/
+pagination:
+  enabled: true
 ---
-<div class="container row">
-  {% for post in paginator.posts %}
-    {% include feed-post-vertical.html %}
-  {% endfor %}
-</div>
-
-{% include paginator.html %}
