@@ -2,6 +2,7 @@
 title: Kiwi
 layout: post
 author: ted
+permalink: artigos/kiwifruit
 horizontal: true
 tags: [Artigos, HTML, Python]
 image: http://lorempixel.com/400/200/sports

@@ -190,9 +190,9 @@ nav ul li:hover, nav ul li.active {
 /* Fim dos ajustes para o paginator */
 
 /* Ajustes para o layout das sessões */
-/* .container.section .card {
-  width: 70%;
-} */
+.tag-feed h1{
+  padding: 0 0.75rem;
+}
 /* Fim dos ajustes para o layout das sessões */
 
 /* Ajustes para o rodapé */

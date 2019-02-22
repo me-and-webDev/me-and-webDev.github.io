@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<div class="container section row">
+<div class="container row tag-feed">
 
   {% if page.pagination.tags %}
-    <h1>Todos os posts da categoria {{ page.pagination.tags }}</h1>
+    <h1 class="deep-purple-text">{{ page.pagination.tags }}</h1>
   {% endif %}
 
   {% for post in paginator.posts %}
