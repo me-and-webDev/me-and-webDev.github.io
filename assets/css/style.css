@@ -111,6 +111,12 @@ nav ul li:hover, nav ul li.active {
 .card-action {
   font-weight: 500;
 }
+
+.card-action .chip {
+  color: rgba(0, 0, 0, 0.6) !important;
+  margin: 0 5px 5px 0 !important;
+  text-transform: unset !important;
+}
 /* Fim dos ajustes para os cards */
 
 /* Ajustes para o início da página */

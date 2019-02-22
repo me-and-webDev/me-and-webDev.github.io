@@ -1,15 +1,26 @@
-<div
-{% if tag == "JavaScript" %}
-  class="chip yellow darken-2"
-{% elsif tag == "CSS" %}
-  class="chip blue"
-{% elsif tag == "HTML" %}
-  class="chip orange darken-4"
-{% elsif tag == "Python" %}
-  class="chip light-green accent-4"
+{% for item in site.data.navigation %}
+  {% if item.name == tag %}
+    {% assign target = item.link %}
+    {% break %}
+  {% else %}
+    {% assign target = "#!" %}
+  {% endif %}
+{% endfor %}
+
+<a
+href="{{ target.link }}"
+class="chip
+{% if tag == 'JavaScript' %}
+  yellow darken-2
+{% elsif tag == 'CSS' %}
+  blue
+{% elsif tag == 'HTML' %}
+  orange darken-4
+{% elsif tag == 'Python' %}
+  light-green accent-4
 {% else %}
-  class="chip"
-{% endif %}
+  class=''
+{% endif %}"
 >
   {{ tag }}
-</div>
+</a>
