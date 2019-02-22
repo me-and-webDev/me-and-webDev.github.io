@@ -87,7 +87,15 @@ nav ul li:hover, nav ul li.active {
 }
 /* Fim dos ajustes para a barra de navegação */
 
-/* Ajustes para o início da página */
+/* Ajustes para os cards */
+.card-content .card-title {
+  color: #212121;
+}
+
+.card-content .card-title:hover {
+  color: #fbc02d;
+}
+
 .card .card-title {
   font-weight: 400;
 }
@@ -103,6 +111,16 @@ nav ul li:hover, nav ul li.active {
 .card-action {
   font-weight: 500;
 }
+
+.card-action .chip {
+  color: rgba(0, 0, 0, 0.6) !important;
+  margin: 0 5px 5px 0 !important;
+  text-transform: unset !important;
+}
+/* Fim dos ajustes para os cards */
+
+/* Ajustes para o início da página */
+
 /* Fim dos ajustes do início da página */
 
 /* Ajustes para posts */
@@ -148,7 +166,7 @@ nav ul li:hover, nav ul li.active {
 
   .post h2 {
     width: 100%;
-    font-size: 230%;
+    font-size: 205%;
   }
 }
 
@@ -190,9 +208,9 @@ nav ul li:hover, nav ul li.active {
 /* Fim dos ajustes para o paginator */
 
 /* Ajustes para o layout das sessões */
-/* .container.section .card {
-  width: 70%;
-} */
+.tag-feed h1{
+  padding: 0 0.75rem;
+}
 /* Fim dos ajustes para o layout das sessões */
 
 /* Ajustes para o rodapé */
