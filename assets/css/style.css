@@ -87,7 +87,15 @@ nav ul li:hover, nav ul li.active {
 }
 /* Fim dos ajustes para a barra de navegação */
 
-/* Ajustes para o início da página */
+/* Ajustes para os cards */
+.card-content .card-title {
+  color: #212121;
+}
+
+.card-content .card-title:hover {
+  color: #fbc02d;
+}
+
 .card .card-title {
   font-weight: 400;
 }
@@ -103,6 +111,10 @@ nav ul li:hover, nav ul li.active {
 .card-action {
   font-weight: 500;
 }
+/* Fim dos ajustes para os cards */
+
+/* Ajustes para o início da página */
+
 /* Fim dos ajustes do início da página */
 
 /* Ajustes para posts */

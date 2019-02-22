@@ -1,31 +1,24 @@
 <div class="col l9 hide-on-med-and-down">
   <div class="card small horizontal">
     <div class="card-image">
-      <img src="{{ post.image }}">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}">
+      </a>
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <span class="card-title">{{ post.title }}</span>
+        <a href="{{ post.url }}">
+          <span class="card-title">{{ post.title }}</span>
+        </a>
         <p>{{ post.introPhrase }}</p>
       </div>
       <div class="card-action">
-        <a href="{{ post.url }}">Leia mais</a>
+        {% for tag in post.tags limit:3 %}
+          {% include tag.html %}
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
 
-<div class="col s12 m6 hide-on-large-only">
-  <div class="card">
-    <div class="card-image">
-      <img src="{{ post.image }}">
-    </div>
-    <div class="card-content">
-      <span class="card-title">{{ post.title }}</span>
-      <p>{{ post.introPhrase }}</p>
-    </div>
-    <div class="card-action">
-      <a href="{{ post.url }}">Leia mais</a>
-    </div>
-  </div>
-</div>
+{% include feed-post-mobile.html %}

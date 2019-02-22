@@ -1,15 +1,23 @@
 <div class="col m12 l12 hide-on-small-only">
   <div class="card small horizontal">
     <div class="card-image">
-      <img src="{{ site.posts[0].image }}">
+      <a href="{{ site.posts[0].url }}">
+        <img src="{{ site.posts[0].image }}">
+      </a>
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <span class="card-title">{{ site.posts[0].title }}</span>
+        <a href="{{ site.posts[0].url }}">
+          <span class="card-title">
+            {{ site.posts[0].title }}
+          </span>
+        </a>
         <p>{{ site.posts[0].introPhrase }}</p>
       </div>
       <div class="card-action yellow-text text-darken-2">
-        <a href="{{ site.posts[0].url }}">Leia mais</a>
+        {% for tag in site.posts[0].tags limit:4 %}
+          {% include tag.html %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -18,14 +26,20 @@
 <div class="col s12 hide-on-med-and-up">
   <div class="card">
     <div class="card-image">
-      <img src="{{ site.posts[0].image }}">
+      <a href="{{ site.posts[0].url }}">
+        <img src="{{ site.posts[0].image }}">
+      </a>
     </div>
     <div class="card-content">
-      <span class="card-title">{{ site.posts[0].title }}</span>
+      <a href="{{ site.posts[0].url }}">
+        <span class="card-title">{{ site.posts[0].title }}</span>
+      </a>
       <p>{{ site.posts[0].introPhrase }}</p>
     </div>
     <div class="card-action">
-      <a href="{{ site.posts[0].url }}">Leia mais</a>
+      {% for tag in site.posts[0].tags limit:1 %}
+        {% include tag.html %}
+      {% endfor %}
     </div>
   </div>
 </div>
