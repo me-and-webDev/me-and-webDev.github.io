@@ -88,16 +88,17 @@ nav ul li:hover, nav ul li.active {
 /* Fim dos ajustes para a barra de navegação */
 
 /* Ajustes para os cards */
-.card-content .card-title {
+.card .card-content .card-title {
   color: #212121;
-}
-
-.card-content .card-title:hover {
-  color: #fbc02d;
+  transition: color .4s;
 }
 
 .card .card-title {
   font-weight: 400;
+}
+
+.card-content .card-title:hover {
+  color: #fbc02d;
 }
 
 .card.horizontal .card-content {
