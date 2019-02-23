@@ -11,6 +11,9 @@
     </div>
     <div class="card-action">
       {% for tag in post.tags limit:4 %}
+        {% if tag == page.pagination.tags %}
+          {% continue %}
+        {% endif %}
         {% include tag.html %}
       {% endfor %}
     </div>
