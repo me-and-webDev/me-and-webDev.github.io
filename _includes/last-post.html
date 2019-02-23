@@ -37,9 +37,15 @@
       <p>{{ site.posts[0].introPhrase }}</p>
     </div>
     <div class="card-action">
-      {% for tag in site.posts[0].tags limit:1 %}
-        {% include tag.html %}
-      {% endfor %}
+      {% if site.posts[0].tags[0] != page.pagination.tags %}
+        {% for tag in site.posts[0].tags limit:1 %}
+          {% include tag.html %}
+        {% endfor %}
+      {% else %}
+        {% for tag in site.posts[0].tags offset:2 limit:1 %}
+          {% include tag.html %}
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 </div>
