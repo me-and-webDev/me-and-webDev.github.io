@@ -4,15 +4,17 @@ title: Me and Web Dev
 ---
 
 <div class="container row">
-  {% include last-post.html %}
-  {% for post in site.posts offset:1 limit:2 %}
-    {% include penultimate-posts.html %}
-  {% endfor %}
-  {% for post in site.posts offset: 3 %}
-    {% if post.horizontal %}
-      {% include feed-post-horizontal.html %}
+  {% for post in site.posts %}
+    {% if forloop.index == 1 %}
+      {% include last-post.html %}
+    {% elsif forloop.index == 2 or forloop.index == 3 %}
+      {% include penultimate-posts.html %}
     {% else %}
-      {% include feed-post-vertical.html %}
+      {% if post.horizontal %}
+        {% include feed-post-horizontal.html %}
+      {% else %}
+        {% include feed-post-vertical.html %}
+      {% endif %}
     {% endif %}
   {% endfor %}
   <div class="col s12 m12 l12 center">

@@ -1,21 +1,21 @@
 <div class="col m12 l12 hide-on-small-only">
   <div class="card small horizontal">
     <div class="card-image">
-      <a href="{{ site.posts[0].url }}">
-        <img src="{{ site.posts[0].image }}">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}">
       </a>
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <a href="{{ site.posts[0].url }}">
+        <a href="{{ post.url }}">
           <span class="card-title">
-            {{ site.posts[0].title }}
+            {{ post.title }}
           </span>
         </a>
-        <p>{{ site.posts[0].introPhrase }}</p>
+        <p>{{ post.introPhrase }}</p>
       </div>
       <div class="card-action yellow-text text-darken-2">
-        {% for tag in site.posts[0].tags limit:4 %}
+        {% for tag in post.tags limit:4 %}
           {% include tag.html %}
         {% endfor %}
       </div>
@@ -23,29 +23,4 @@
   </div>
 </div>
 
-<div class="col s12 hide-on-med-and-up">
-  <div class="card">
-    <div class="card-image">
-      <a href="{{ site.posts[0].url }}">
-        <img src="{{ site.posts[0].image }}">
-      </a>
-    </div>
-    <div class="card-content">
-      <a href="{{ site.posts[0].url }}">
-        <span class="card-title">{{ site.posts[0].title }}</span>
-      </a>
-      <p>{{ site.posts[0].introPhrase }}</p>
-    </div>
-    <div class="card-action">
-      {% if site.posts[0].tags[0] != page.pagination.tags %}
-        {% for tag in site.posts[0].tags limit:1 %}
-          {% include tag.html %}
-        {% endfor %}
-      {% else %}
-        {% for tag in site.posts[0].tags offset:2 limit:1 %}
-          {% include tag.html %}
-        {% endfor %}
-      {% endif %}
-    </div>
-  </div>
-</div>
+{% include feed-post-mobile.html %}
