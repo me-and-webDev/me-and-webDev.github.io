@@ -48,6 +48,10 @@ nav .brand-logo {
   transform: translateY(-50%);
 }
 
+nav ul {
+  margin-right: 12px;
+}
+
 nav ul li {
   font-weight: bold;
 }
@@ -85,9 +89,18 @@ nav ul li:hover, nav ul li.active {
 #modal-search .modal-content {
   padding: 10px;
 }
+
+#nav-dropdown a {
+  color: rgba(0, 0, 0, 0.6)
+}
 /* Fim dos ajustes para a barra de navegação */
 
 /* Ajustes para os cards */
+.card-image .card-title {
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+}
+
 .card .card-content .card-title {
   color: #212121;
   transition: color .4s;
