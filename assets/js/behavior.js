@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // $(document).ready(function(){
-//   $('.tabs').tabs();
+
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -31,6 +31,14 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var instances = M.Dropdown.init(elems, {
+    coverTrigger: false
+  });
+});
+
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   var elems = document.querySelectorAll('.btn-floating');

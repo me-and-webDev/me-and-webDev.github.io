@@ -1,8 +1,24 @@
-- name: Notícias
-  link: /noticias
-- name: Tutoriais
-  link: /tutoriais
-- name: Artigos
-  link: /artigos
-- name: Snacks
-  link: /snacks
+- item: sections
+  subfolderitems:
+    - name: Notícias
+      link: /noticias/
+    - name: Tutoriais
+      link: /tutoriais/
+    - name: Artigos
+      link: /artigos/
+    - name: Snacks
+      link: /snacks/
+- item: languages
+  subfolderitems:
+    - name: CSS
+      link: /tags/css/
+      color: 'blue lighten-1'
+    - name: HTML
+      link: /tags/html/
+      color: 'amber darken-4'
+    - name: JavaScript
+      link: /tags/javascript/
+      color: 'yellow accent-3'
+    - name: Python
+      link: /tags/python/
+      color: 'green accent-4'

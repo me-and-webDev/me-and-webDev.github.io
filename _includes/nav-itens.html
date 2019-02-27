@@ -1,7 +1,7 @@
-{% for item in site.data.navigation %}
-  <li {% if page.url == item.link %} class="active" {% endif %}>
-    <a href="{{ item.link }}">
-      {{ item.name }}
+{% for section in site.data.navigation.[0].subfolderitems %}
+  <li {% if page.pagination.tags == section.name %} class="active" {% endif %}>
+    <a href="{{ section.link }}">
+      {{ section.name }}
     </a>
   </li>
 {% endfor %}

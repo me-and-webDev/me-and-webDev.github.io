@@ -1,0 +1,8 @@
+{% assign langs = site.data.navigation.[1].subfolderitems | sort: 'name' %}
+<ul id='nav-dropdown' class='dropdown-content'>
+  {% for lang in langs %}
+    <li class="{{ lang.color }}">
+      <a href="{{ lang.link }}">{{ lang.name }}</a>
+    </li>
+  {% endfor %}
+</ul>

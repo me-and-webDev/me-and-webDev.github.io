@@ -1,9 +1,14 @@
 {% for item in site.data.navigation %}
-  {% if item.name == tag %}
-    {% assign target = item.link %}
+  {% for entry in item.subfolderitems %}
+    {% if entry.name == tag %}
+      {% assign target = entry.link %}
+      {% break %}
+    {% else %}
+      {% assign target = "#!" %}
+    {% endif %}
+  {% endfor %}
+  {% if target != "#!" %}
     {% break %}
-  {% else %}
-    {% assign target = "#!" %}
   {% endif %}
 {% endfor %}
 
@@ -11,13 +16,13 @@
 href="{{ target }}"
 class="chip
 {% if tag == 'JavaScript' %}
-  yellow darken-2
+  yellow accent-3
 {% elsif tag == 'CSS' %}
-  blue
+  blue lighten-1
 {% elsif tag == 'HTML' %}
-  orange darken-4
+  amber darken-4
 {% elsif tag == 'Python' %}
-  light-green accent-4
+  green accent-4
 {% else %}
   grey lighten-1
 {% endif %}"
