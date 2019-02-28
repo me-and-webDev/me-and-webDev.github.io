@@ -64,26 +64,45 @@ nav ul li:hover, nav ul li.active {
   transition: top 0.3s ease-in-out;
 }
 
-#mobile-nav li a {
+.sidenav li a {
   color: #673ab7;
 }
 
-#mobile-nav li:hover, #mobile-nav li.active {
+.sidenav li:hover, #mobile-nav li.active {
   background-color: #ede7f6;
 }
 
-#mobile-nav .input-field {
+.sidenav .input-field {
   margin: 0;
 }
 
-#mobile-nav input[type=search] {
-  padding: 0 14%;
+.sidenav input[type=search] {
+  padding: 0 15%;
   margin: 0;
   box-sizing: border-box;
 }
 
-#mobile-nav i[onclick] {
-  top: 15%;
+.sidenav i[onclick] {
+  top: 15% !important;
+}
+
+.sidenav .collapsible .collapsible-header {
+  padding: 0 32px;
+  font-weight: 500;
+  color: #673ab7;
+}
+
+.sidenav .collapsible .collapsible-body li.active {
+  border-left: 5px solid #673ab7;
+}
+
+.sidenav .collapsible .collapsible-body li.active a {
+  color: white
+}
+
+.sidenav .collapsible a {
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 48px !important;
 }
 
 #modal-search .modal-content {
@@ -91,7 +110,11 @@ nav ul li:hover, nav ul li.active {
 }
 
 #nav-dropdown a {
-  color: rgba(0, 0, 0, 0.6)
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#nav-dropdown li.active a {
+  color: white;
 }
 /* Fim dos ajustes para a barra de navegação */
 

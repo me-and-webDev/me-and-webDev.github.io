@@ -12,13 +12,13 @@
   subfolderitems:
     - name: CSS
       link: /tags/css/
-      color: 'blue lighten-1'
+      color: 'blue lighten-2'
     - name: HTML
       link: /tags/html/
-      color: 'amber darken-4'
+      color: 'amber darken-3'
     - name: JavaScript
       link: /tags/javascript/
-      color: 'yellow accent-3'
+      color: 'yellow'
     - name: Python
       link: /tags/python/
       color: 'green accent-4'

@@ -48,6 +48,7 @@
   </nav>
 </div>
 
+<!-- Sidenav para mobile -->
 <ul id="mobile-nav" class="sidenav">
   <li>
     <form>
@@ -59,6 +60,25 @@
     </form>
   </li>
   {% include nav-itens.html %}
+  <li>
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">
+          Linguagens<i class="material-icons right">arrow_drop_down</i>
+        </div>
+        <div class="collapsible-body">
+          {% assign langs = site.data.navigation.[1].subfolderitems | sort: 'name' %}
+          <ul>
+            {% for lang in langs %}
+              <li class="{% if page.pagination.tags == lang.name %} active {% endif %} {{ lang.color }}">
+                <a href="{{ lang.link }}">{{ lang.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <div id="modal-search" class="modal deep-purple lighten-2">
