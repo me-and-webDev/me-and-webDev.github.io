@@ -2,7 +2,14 @@
 <ul id='nav-dropdown' class='dropdown-content'>
   {% for lang in langs %}
     <li class="{% if page.pagination.tags == lang.name %} active {% endif %} {{ lang.color }}">
-      <a href="{{ lang.link }}">{{ lang.name }}</a>
+      <a href="
+      {% if page.pagination.tags == lang.name %}
+        #!
+      {% else %}
+        {{ lang.link }}
+      {% endif %}">
+        {{ lang.name }}
+      </a>
     </li>
   {% endfor %}
 </ul>

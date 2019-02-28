@@ -1,31 +1,18 @@
 {% for item in site.data.navigation %}
   {% for entry in item.subfolderitems %}
     {% if entry.name == tag %}
-      {% assign target = entry.link %}
+      {% assign target = entry %}
       {% break %}
     {% else %}
-      {% assign target = "#!" %}
+      {% assign target = "" %}
     {% endif %}
   {% endfor %}
-  {% if target != "#!" %}
+  {% if target != "" %}
     {% break %}
   {% endif %}
 {% endfor %}
 
-<a
-href="{{ target }}"
-class="chip
-{% if tag == 'JavaScript' %}
-  yellow
-{% elsif tag == 'CSS' %}
-  blue lighten-2
-{% elsif tag == 'HTML' %}
-  amber darken-3
-{% elsif tag == 'Python' %}
-  green accent-4
-{% else %}
-  grey lighten-1
-{% endif %}"
->
+<a href="{{ target.link }}"
+class="chip {% if target.color %} {{ target.color }} {% else %} grey {% endif %}">
   {{ tag }}
 </a>

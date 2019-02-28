@@ -97,7 +97,7 @@ nav ul li:hover, nav ul li.active {
 }
 
 .sidenav .collapsible .collapsible-body li.active a {
-  color: white
+  color: white;
 }
 
 .sidenav .collapsible a {

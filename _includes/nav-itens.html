@@ -1,6 +1,11 @@
 {% for section in site.data.navigation.[0].subfolderitems %}
   <li {% if page.pagination.tags == section.name %} class="active" {% endif %}>
-    <a href="{{ section.link }}">
+    <a href="
+    {% if page.pagination.tags == section.name %}
+      #!
+    {% else %}
+      {{ section.link }}
+    {% endif %}">
       {{ section.name }}
     </a>
   </li>
