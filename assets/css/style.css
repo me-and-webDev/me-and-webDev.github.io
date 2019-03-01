@@ -251,7 +251,43 @@ nav ul li:hover, nav ul li.active {
 /* Fim dos ajustes para o layout das sessões */
 
 /* Ajustes para o rodapé */
-  .page-footer .row {
-    margin-bottom: 0;
+.page-footer .row {
+  margin-bottom: 0;
+}
+
+footer ul li {
+  font-size: initial;
+}
+
+footer img {
+  width: 120px;
+  vertical-align: middle;
+}
+
+footer .col:first-child img {
+  margin-left: -6%;
+}
+
+address {
+  margin: 4% 0;
+  font-style: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .col {
+    text-align: center;
   }
+
+  footer .valign-wrapper {
+    flex-flow: column;
+  }
+
+  footer .col a {
+    display: block;
+  }
+
+  footer .col:first-child a {
+    margin-bottom: 4%;
+  }
+}
 /* Fim dos ajustes para o dapé */
