@@ -9,6 +9,12 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 main {
   /* Manter o footer no fim da página */
   flex: 1 0 auto;
@@ -191,11 +197,6 @@ nav ul li:hover, nav ul li.active {
   font-weight: 500;
 }
 
-.post h2 {
-  width: 72%;
-  margin: 5% auto 2%;
-}
-
 @media only screen and (max-width: 600px) {
   .post h1 {
     font-size: 240%;
@@ -207,15 +208,38 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
+.post article {
+  padding: 0 11%;
+}
+
+@media only screen and (max-width: 600px) {
+  .post article {
+    padding: 0;
+  }
+}
+
 .post p {
-  width: 72%;
-  margin: 15px auto;
   font-size: large;
 }
 
 @media only screen and (max-width: 600px) {
   .post p {
     width: 100%;
+  }
+}
+
+.post-img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-img {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 }
 /* Fim dos ajustes para posts */
