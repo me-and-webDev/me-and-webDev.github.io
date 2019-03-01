@@ -5,15 +5,23 @@ layout: default
   <header>
     <h1 class="deep-purple-text text-darken-3">{{ page.title }}</h1>
     <p>{{ page.introPhrase }}</p>
-    <div>
-      <p><b>{{ page.author }}</b> - em {{ page.date | date: "%d/%m/%Y" }}</p>
-      {% for tag in page.tags %}
-        {% include tag.html %}
-      {% endfor %}
+    <div class="row valign-wrapper">
+      <p class="col s12 l4"><b>{{ page.author }}</b> - em {{ page.date | date: "%d/%m/%Y" }}</p>
+      <div class="col l8 right-align hide-on-med-and-down">
+        {% for tag in page.tags %}
+          {% include tag.html %}
+        {% endfor %}
+      </div>
     </div>
   </header>
   <article>
     {{ content }}
   </article>
+  <div class="mobile-tags hide-on-large-only">
+    <p>Tags:</p>
+    {% for tag in page.tags %}
+      {% include tag.html %}
+    {% endfor %}
+  </div>
   {% include fab-share.html %}
 </div>
