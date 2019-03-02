@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// $(document).ready(function(){
-
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.fixed-action-btn');
   var instances = M.FloatingActionButton.init(elems);
@@ -44,8 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Collapsible.init(elems);
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.btn-floating');
-//   var instances = M.Pushpin.init(elems, {
-//   });
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  var footerHeight = document.getElementById('footer').clientHeight;
+  var fab = document.getElementById('fab');
+  var limit = document.body.clientHeight - window.innerHeight - footerHeight;
+
+  if(fab) {
+    document.addEventListener('scroll', function() {
+      if(window.pageYOffset >= limit) {
+        fab.setAttribute("style", "bottom:" + (footerHeight + 23) + "px;");
+      } else {
+        fab.setAttribute("style", "bottom: 23px;");
+      }
+    });
+  }
+});
