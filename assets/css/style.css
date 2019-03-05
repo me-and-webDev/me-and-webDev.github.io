@@ -246,11 +246,16 @@ nav ul li:hover, nav ul li.active {
 }
 
 .mobile-tags .chip {
-  margin-top: 5px;
+  margin: 5px;
+}
+
+#mobile-share ul {
+  display: flex;
+  justify-content: center;
 }
 /* Fim dos ajustes para posts */
 
-/* Ajustes para o FAB */
+/* Ajustes para o compartilhamento */
 .fixed-action-btn {
   right: 15%;
   transition: bottom .2s;
@@ -262,12 +267,15 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .fixed-action-btn {
-    right: 5%;
-  }
+#mobile-share ul {
+  display: flex;
+  justify-content: center;
 }
-/* Fim dos ajustes para o FAB */
+
+#mobile-share ul li {
+  margin: 0 5px;
+}
+/* Fim dos ajustes para o compartilhamento */
 
 /* Ajustes para o paginator */
 .pagination li.active {
@@ -319,6 +327,12 @@ address {
 
   footer .col:first-child a {
     margin-bottom: 4%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  footer .valign-wrapper {
+    align-items: baseline;
   }
 }
 /* Fim dos ajustes para o dapé */
