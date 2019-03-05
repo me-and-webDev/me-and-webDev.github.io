@@ -9,6 +9,11 @@ body {
   flex-direction: column;
 }
 
+::selection {
+  color: white;
+  background-color: #b39ddb;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
@@ -336,3 +341,18 @@ address {
   }
 }
 /* Fim dos ajustes para o dapé */
+
+/* Ajustes 404 */
+#not-found {
+  text-align: center;
+}
+
+#not-found i {
+  font-size: 10em;
+  margin-top: 2.8rem;
+}
+
+#not-found p {
+  font-size: 3em;
+}
+/* Fim dos ajustes 404 */
