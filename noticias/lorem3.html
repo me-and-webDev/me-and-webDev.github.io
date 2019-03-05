@@ -294,7 +294,7 @@
     <h1 class="deep-purple-text text-darken-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
     <div class="row valign-wrapper">
-      <p class="col s12 l4"><b>Well Marques</b> - em 07/02/2019</p>
+      <p class="col s12 l4"><b>Well Marques</b> - em <time>07/02/2019</time></p>
       <div class="col l8 right-align hide-on-med-and-down">
         
           
@@ -670,15 +670,22 @@ class="chip  green accent-4 ">
 
     
   </div>
-  <div id="fab" class="fixed-action-btn">
+  <div id="fab" class="fixed-action-btn hide-on-small-only">
   <a class="btn-floating btn-large deep-purple">
     <i class="large material-icons">share</i>
   </a>
   <ul>
     <li><a class="btn-floating blue darken-4">L</a></li>
-    <li><a class="btn-floating light-blue">T</a></li>
     <li><a class="btn-floating green">W</a></li>
     <li><a class="btn-floating blue darken-3">F</a></li>
+  </ul>
+</div>
+
+<div id="mobile-share" class="hide-on-med-and-up">
+  <ul>
+    <li><a class="btn blue darken-4">L</a></li>
+    <li><a class="btn green">W</a></li>
+    <li><a class="btn blue darken-3">F</a></li>
   </ul>
 </div>
 

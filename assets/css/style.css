@@ -9,6 +9,11 @@ body {
   flex-direction: column;
 }
 
+::selection {
+  color: white;
+  background-color: #b39ddb;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
@@ -246,11 +251,16 @@ nav ul li:hover, nav ul li.active {
 }
 
 .mobile-tags .chip {
-  margin-top: 5px;
+  margin: 5px;
+}
+
+#mobile-share ul {
+  display: flex;
+  justify-content: center;
 }
 /* Fim dos ajustes para posts */
 
-/* Ajustes para o FAB */
+/* Ajustes para o compartilhamento */
 .fixed-action-btn {
   right: 15%;
   transition: bottom .2s;
@@ -262,12 +272,15 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .fixed-action-btn {
-    right: 5%;
-  }
+#mobile-share ul {
+  display: flex;
+  justify-content: center;
 }
-/* Fim dos ajustes para o FAB */
+
+#mobile-share ul li {
+  margin: 0 5px;
+}
+/* Fim dos ajustes para o compartilhamento */
 
 /* Ajustes para o paginator */
 .pagination li.active {
@@ -321,4 +334,25 @@ address {
     margin-bottom: 4%;
   }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  footer .valign-wrapper {
+    align-items: baseline;
+  }
+}
 /* Fim dos ajustes para o dapé */
+
+/* Ajustes 404 */
+#not-found {
+  text-align: center;
+}
+
+#not-found i {
+  font-size: 10em;
+  margin-top: 2.8rem;
+}
+
+#not-found p {
+  font-size: 3em;
+}
+/* Fim dos ajustes 404 */
