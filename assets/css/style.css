@@ -9,6 +9,12 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 960px) {
+  .flow-text {
+      font-size: 1.5rem;
+  }
+}
+
 ::selection {
   color: white;
   background-color: #b39ddb;
@@ -177,13 +183,9 @@ nav ul li:hover, nav ul li.active {
 }
 /* Fim dos ajustes para os cards */
 
-/* Ajustes para o início da página */
-
-/* Fim dos ajustes do início da página */
-
 /* Ajustes para posts */
 .post {
-  margin-bottom: 36px;
+  margin-bottom: 1em;
 }
 
 .post header {
@@ -219,14 +221,8 @@ nav ul li:hover, nav ul li.active {
   .post article {
     padding: 0;
   }
-}
 
-.post p {
-  font-size: large;
-}
-
-@media only screen and (max-width: 600px) {
-  .post p {
+  .post article p {
     width: 100%;
   }
 }
@@ -299,6 +295,12 @@ nav ul li:hover, nav ul li.active {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .page-footer .row {
+    margin-bottom: 2em;
+  }
+}
+
 footer ul li {
   font-size: initial;
 }
@@ -348,11 +350,25 @@ address {
 }
 
 #not-found i {
-  font-size: 10em;
+  font-size: 4em;
   margin-top: 2.8rem;
 }
 
 #not-found p {
-  font-size: 3em;
+  text-align: left;
+}
+
+#not-found article {
+  padding: 0 11%;
+}
+
+@media only screen and (max-width: 600px) {
+  #not-found article {
+    padding: 0;
+  }
+
+  #not-found article p {
+    width: 100%;
+  }
 }
 /* Fim dos ajustes 404 */
