@@ -6,7 +6,9 @@ layout: default
     <h1 class="deep-purple-text text-darken-3">{{ page.title }}</h1>
     <p>{{ page.introPhrase }}</p>
     <div class="row valign-wrapper">
-      <p class="col s12 l4"><b>{{ page.author }}</b> - em <time>{{ page.date | date: "%d/%m/%Y" }}</time></p>
+      <p class="col s12 l4">
+        <b>{{ page.author }}</b><br><time>{{ page.date | date: "%d/%m/%Y" }}</time>
+      </p>
       <div class="col l8 right-align hide-on-med-and-down">
         {% for tag in page.tags %}
           {% include tag.html %}
