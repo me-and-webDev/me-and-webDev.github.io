@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.min.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css" />
 </head>
 <body>
@@ -30,7 +31,6 @@
       FB.init({
         appId: '252554985626178',
         autoLogAppEvents: true,
-        xfbml: true,
         version: 'v3.2'
       });
     };
@@ -687,20 +687,38 @@ class="chip  green accent-4 ">
     <i class="large material-icons">share</i>
   </a>
   <ul>
-    <li><a class="btn-floating blue darken-4">L</a></li>
-    <li><a class="btn-floating green hide-on-med-and-up">W</a></li>
+    <li>
+      <a class="btn-floating blue darken-4">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
     <li>
       <a class="btn-floating blue darken-3"
-      onclick="fbShare('https://me-and-webdev.github.io/tutoriais/bananas')">F</a>
+      onclick="fbShare('https://me-and-webdev.github.io/tutoriais/bananas')">
+        <i class="fa fa-facebook"></i>
+      </a>
     </li>
   </ul>
 </div>
 
 <div id="mobile-share" class="hide-on-med-and-up">
   <ul>
-    <li><a class="btn blue darken-4">L</a></li>
-    <li><a class="btn green">W</a></li>
-    <li><a class="btn blue darken-3">F</a></li>
+    <li>
+      <a class="btn blue darken-4">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="btn green">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a class="btn blue darken-3"
+      onclick="fbShare('https://me-and-webdev.github.io/tutoriais/bananas')">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
   </ul>
 </div>
 
