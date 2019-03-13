@@ -56,12 +56,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Função para compartilhamento no Facebook
+// Compartilhamento no Facebook
 function fbShare(url) {
   FB.ui({
     href: url,
     method: 'share',
-  }, function(response){
-    console.log(url);
-  });
+  }, function(response){});
+}
+
+// Compartilhamento no Twitter
+function twShare(href) {
+  window.open(
+    href,
+    '_blank',
+    'left=' + (window.outerWidth / 2 - 250) + ', top=' + (window.outerHeight / 2 - 250) + ', width=500, height=500'
+  );
 }

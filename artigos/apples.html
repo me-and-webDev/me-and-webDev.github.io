@@ -531,14 +531,22 @@ class="chip  blue lighten-2 ">
   </a>
   <ul>
     <li>
-      <a class="btn-floating blue darken-4">
+      <a href="!#" class="btn-floating linkedin-share">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a class="btn-floating blue darken-3"
-      onclick="fbShare('https://me-and-webdev.github.io/artigos/apples')">
+      <a href="https://me-and-webdev.github.io/artigos/apples"
+      class="btn-floating facebook-share"
+      onclick="fbShare(this.href); return false">
         <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=Apples&url=https://me-and-webdev.github.io/artigos/apples"
+      class="btn-floating twitter-share"
+      onclick="twShare(this.href); return false">
+        <i class="fa fa-twitter"></i>
       </a>
     </li>
   </ul>
@@ -547,19 +555,27 @@ class="chip  blue lighten-2 ">
 <div id="mobile-share" class="hide-on-med-and-up">
   <ul>
     <li>
-      <a class="btn blue darken-4">
+      <a href="!#" class="btn linkedin-share">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a class="btn green">
+      <a href="!#" class="btn whatsapp-share">
         <i class="fa fa-whatsapp"></i>
       </a>
     </li>
     <li>
-      <a class="btn blue darken-3"
-      onclick="fbShare('https://me-and-webdev.github.io/artigos/apples')">
+      <a href="https://me-and-webdev.github.io/artigos/apples"
+      class="btn facebook-share"
+      onclick="fbShare(this.href); return false">
         <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=Apples&url=https://me-and-webdev.github.io/artigos/apples"
+      class="btn twitter-share"
+      onclick="twShare(this.href); return false">
+        <i class="fa fa-twitter"></i>
       </a>
     </li>
   </ul>

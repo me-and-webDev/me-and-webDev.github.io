@@ -277,6 +277,22 @@ nav ul li:hover, nav ul li.active {
 #mobile-share ul li {
   margin: 0 5px;
 }
+
+.facebook-share {
+  background-color: #4267b2;
+}
+
+.linkedin-share {
+  background-color: #273e4a;
+}
+
+.twitter-share {
+  background-color: #0a88f7;
+}
+
+.whatsapp-share {
+  background-color: #00e676;
+}
 /* Fim dos ajustes para o compartilhamento */
 
 /* Ajustes para o paginator */

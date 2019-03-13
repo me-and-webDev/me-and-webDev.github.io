@@ -675,14 +675,22 @@ class="chip  green accent-4 ">
   </a>
   <ul>
     <li>
-      <a class="btn-floating blue darken-4">
+      <a href="!#" class="btn-floating linkedin-share">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a class="btn-floating blue darken-3"
-      onclick="fbShare('https://me-and-webdev.github.io/noticias/lorem1')">
+      <a href="https://me-and-webdev.github.io/noticias/lorem1"
+      class="btn-floating facebook-share"
+      onclick="fbShare(this.href); return false">
         <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=Lorem 1&url=https://me-and-webdev.github.io/noticias/lorem1"
+      class="btn-floating twitter-share"
+      onclick="twShare(this.href); return false">
+        <i class="fa fa-twitter"></i>
       </a>
     </li>
   </ul>
@@ -691,19 +699,27 @@ class="chip  green accent-4 ">
 <div id="mobile-share" class="hide-on-med-and-up">
   <ul>
     <li>
-      <a class="btn blue darken-4">
+      <a href="!#" class="btn linkedin-share">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a class="btn green">
+      <a href="!#" class="btn whatsapp-share">
         <i class="fa fa-whatsapp"></i>
       </a>
     </li>
     <li>
-      <a class="btn blue darken-3"
-      onclick="fbShare('https://me-and-webdev.github.io/noticias/lorem1')">
+      <a href="https://me-and-webdev.github.io/noticias/lorem1"
+      class="btn facebook-share"
+      onclick="fbShare(this.href); return false">
         <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=Lorem 1&url=https://me-and-webdev.github.io/noticias/lorem1"
+      class="btn twitter-share"
+      onclick="twShare(this.href); return false">
+        <i class="fa fa-twitter"></i>
       </a>
     </li>
   </ul>
