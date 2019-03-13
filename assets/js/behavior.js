@@ -55,3 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Função para compartilhamento no Facebook
+function fbShare(url) {
+  FB.ui({
+    href: url,
+    method: 'share',
+  }, function(response){
+    console.log(url);
+  });
+}
