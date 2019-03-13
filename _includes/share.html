@@ -38,13 +38,16 @@
       </a>
     </li>
     <li>
-      <a href="!#" class="btn facebook-share"
-      onclick="fbShare('https://me-and-webdev.github.io{{ page.url }}')">
+      <a href="https://me-and-webdev.github.io{{ page.url }}"
+      class="btn facebook-share"
+      onclick="fbShare(this.href); return false">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
-      <a href="!#" class="btn twitter-share">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://me-and-webdev.github.io{{ page.url }}"
+      class="btn twitter-share"
+      onclick="twShare(this.href); return false">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
