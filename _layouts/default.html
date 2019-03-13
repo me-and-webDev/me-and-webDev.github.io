@@ -12,14 +12,17 @@
   <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta property="og:url" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="Me and WebDev" />
+  <meta property="og:url" content="https://me-and-webdev.github.io{% if page.url != '/' %}{{ page.url }}{% endif %}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.introPhrase }}" />
+  <meta property="og:image" content="{{ page.image }}" />
+  <meta property="fb:app_id" content="252554985626178" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.min.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css" />
 </head>
 <body>
@@ -28,7 +31,6 @@
       FB.init({
         appId: '252554985626178',
         autoLogAppEvents: true,
-        //xfbml: true,
         version: 'v3.2'
       });
     };

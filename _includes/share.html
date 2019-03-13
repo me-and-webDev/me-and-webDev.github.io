@@ -3,19 +3,37 @@
     <i class="large material-icons">share</i>
   </a>
   <ul>
-    <li><a class="btn-floating blue darken-4">L</a></li>
-    <li><a class="btn-floating green hide-on-med-and-up">W</a></li>
+    <li>
+      <a class="btn-floating blue darken-4">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
     <li>
       <a class="btn-floating blue darken-3"
-      onclick="fbShare('{{ site.url }}{{ page.url }}')">F</a>
+      onclick="fbShare('https://me-and-webdev.github.io{{ page.url }}')">
+        <i class="fa fa-facebook"></i>
+      </a>
     </li>
   </ul>
 </div>
 
 <div id="mobile-share" class="hide-on-med-and-up">
   <ul>
-    <li><a class="btn blue darken-4">L</a></li>
-    <li><a class="btn green">W</a></li>
-    <li><a class="btn blue darken-3">F</a></li>
+    <li>
+      <a class="btn blue darken-4">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="btn green">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a class="btn blue darken-3"
+      onclick="fbShare('https://me-and-webdev.github.io{{ page.url }}')">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
   </ul>
 </div>
