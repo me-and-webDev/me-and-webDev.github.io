@@ -24,6 +24,10 @@ body {
   body {
     overflow-x: hidden;
   }
+
+  .row .col {
+    padding: 0;
+  }
 }
 
 main {
