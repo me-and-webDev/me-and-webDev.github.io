@@ -64,8 +64,8 @@ function fbShare(url) {
   }, function(response){});
 }
 
-// Compartilhamento no Twitter
-function twShare(href) {
+// Compartilhamento usando apenas url
+function shareIt(href) {
   window.open(
     href,
     '_blank',

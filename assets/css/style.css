@@ -24,6 +24,10 @@ body {
   body {
     overflow-x: hidden;
   }
+
+  .row .col {
+    padding: 0;
+  }
 }
 
 main {
@@ -292,6 +296,10 @@ nav ul li:hover, nav ul li.active {
 
 .whatsapp-share {
   background-color: #00e676;
+}
+
+.pinterest-share {
+  background-color: #e61723;
 }
 /* Fim dos ajustes para o compartilhamento */
 

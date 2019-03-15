@@ -4,8 +4,17 @@
   </a>
   <ul>
     <li>
-      <a href="!#" class="btn-floating linkedin-share">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://me-and-webdev.github.io{{ page.url }}&title={{ page.title }}&summary={{ page.introPhrase }}&source=Me and WebDev"
+      class="btn-floating linkedin-share"
+      onclick="shareIt(this.href); return false">
         <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="//pinterest.com/pin/create/link/?url=url=https://me-and-webdev.github.io{{ page.url }}&media={{ page.image }}&description={{ page.introPhrase }}"
+      class="btn-floating pinterest-share"
+      onclick="shareIt(this.href); return false">
+        <i class="fa fa-pinterest"></i>
       </a>
     </li>
     <li>
@@ -18,7 +27,7 @@
     <li>
       <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://me-and-webdev.github.io{{ page.url }}"
       class="btn-floating twitter-share"
-      onclick="twShare(this.href); return false">
+      onclick="shareIt(this.href); return false">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
@@ -28,12 +37,21 @@
 <div id="mobile-share" class="hide-on-med-and-up">
   <ul>
     <li>
-      <a href="!#" class="btn linkedin-share">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://me-and-webdev.github.io{{ page.url }}&title={{ page.title }}&summary={{ page.introPhrase }}&source=Me and WebDev"
+      class="btn linkedin-share"
+      onclick="shareIt(this.href); return false">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a href="!#" class="btn whatsapp-share">
+      <a href="//pinterest.com/pin/create/link/?url=url=https://me-and-webdev.github.io{{ page.url }}&media={{ page.image }}&description={{ page.introPhrase }}"
+      class="btn pinterest-share"
+      onclick="shareIt(this.href); return false">
+        <i class="fa fa-pinterest"></i>
+      </a>
+    </li>
+    <li>
+      <a href="whatsapp://send?text=https://me-and-webdev.github.io{{ page.url }}" class="btn whatsapp-share">
         <i class="fa fa-whatsapp"></i>
       </a>
     </li>
@@ -47,7 +65,7 @@
     <li>
       <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://me-and-webdev.github.io{{ page.url }}"
       class="btn twitter-share"
-      onclick="twShare(this.href); return false">
+      onclick="shareIt(this.href); return false">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
