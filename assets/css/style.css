@@ -297,6 +297,10 @@ nav ul li:hover, nav ul li.active {
 .whatsapp-share {
   background-color: #00e676;
 }
+
+.pinterest-share {
+  background-color: #e61723;
+}
 /* Fim dos ajustes para o compartilhamento */
 
 /* Ajustes para o paginator */
