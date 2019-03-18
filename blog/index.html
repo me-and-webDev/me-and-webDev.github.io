@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,18 +12,18 @@
   <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta property="og:site_name" content="Me and WebDev" />
-  <meta property="og:url" content="https://me-and-webdev.github.io/blog/index.html" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Blog" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="" />
-  <meta property="fb:app_id" content="252554985626178" />
+  <meta property="og:site_name" content="Me and WebDev">
+  <meta property="og:url" content="https://me-and-webdev.github.io/blog/index.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Blog">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="fb:app_id" content="252554985626178">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" media="screen, projection" href="/assets/css/materialize.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
 </head>
 <body>
   <script>
@@ -211,7 +211,10 @@
     <form>
       <div class="input-field">
         <input id="mobile-search" type="search" required>
-        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <label class="label-icon">
+          <button type="submit"><i class="material-icons">search</i></button>
+          <!-- <i class="material-icons">search</i> -->
+        </label>
         <i class="material-icons" onclick="document.getElementById('mobile-search').value = ''">close</i>
       </div>
     </form>
@@ -291,11 +294,11 @@
   <div class="modal-content">
     <nav>
       <div class="nav-wrapper">
-        <form>
+        <form onsubmit="searchOnDuckDuckGo()">
           <div class="input-field white">
-            <input id="search-box" type="search" placeholder="Buscar" required>
-            <label class="label-icon" for="search-box">
-              <i class="material-icons">search</i>
+            <input id="search-box" type="search" placeholder="Buscar" name="q" required>
+            <label class="label-icon">
+              <button type="submit"><i class="material-icons">search</i></button>
             </label>
             <i class="material-icons modal-close">close</i>
           </div>

@@ -72,3 +72,9 @@ function shareIt(href) {
     'left=' + (window.outerWidth / 2 - 250) + ', top=' + (window.outerHeight / 2 - 250) + ', width=500, height=500'
   );
 }
+
+function searchOnDuckDuckGo() {
+  var term = document.getElementById('search-box').value;
+  window.open('https://duckduckgo.com/?q=' + term +
+  '+site%3Ame-and-webdev.github.io&k8=g&k1=-1&kz=1&kj=w&kl=br-pt&ky=e&ia=web', '_blank');
+}
