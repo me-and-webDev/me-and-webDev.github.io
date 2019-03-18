@@ -140,6 +140,13 @@ nav ul li:hover, nav ul li.active {
   padding: 10px;
 }
 
+label button[type=submit] {
+  border: none;
+  background: unset;
+  padding: 0;
+  cursor: pointer;
+}
+
 #nav-dropdown a {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -271,6 +278,10 @@ nav ul li:hover, nav ul li.active {
   .fixed-action-btn {
     right: 8%;
   }
+}
+
+.btn-floating i.fa {
+  font-size: 1.2em;
 }
 
 #mobile-share ul {
