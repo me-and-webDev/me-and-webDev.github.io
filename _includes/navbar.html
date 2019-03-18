@@ -51,12 +51,11 @@
 <!-- Sidenav para mobile -->
 <ul id="mobile-side-nav" class="sidenav">
   <li>
-    <form>
+    <form onsubmit="searchOnDuckDuckGo()">
       <div class="input-field">
         <input id="mobile-search" type="search" required>
         <label class="label-icon">
           <button type="submit"><i class="material-icons">search</i></button>
-          <!-- <i class="material-icons">search</i> -->
         </label>
         <i class="material-icons" onclick="document.getElementById('mobile-search').value = ''">close</i>
       </div>
