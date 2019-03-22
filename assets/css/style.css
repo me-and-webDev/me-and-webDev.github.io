@@ -185,7 +185,6 @@ label button[type=submit] {
 
 .card-action {
   font-weight: 500;
-  text-align: center;
 }
 
 .card-action .chip {
@@ -226,7 +225,8 @@ label button[type=submit] {
 }
 
 .post article {
-  padding: 0 11%;
+  padding: 0 11% 4%;
+  border-bottom: 1px solid #7e57c2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -311,6 +311,10 @@ label button[type=submit] {
 
 .pinterest-share {
   background-color: #e61723;
+}
+
+.telegram-share {
+  background-color: #35ace1;
 }
 /* Fim dos ajustes para o compartilhamento */
 
