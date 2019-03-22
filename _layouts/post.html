@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <div class="container post flow-text">
   <header>
@@ -25,5 +26,6 @@ layout: default
       {% include tag.html %}
     {% endfor %}
   </div>
+  {% include disqus.html %}
   {% include share.html %}
 </div>
