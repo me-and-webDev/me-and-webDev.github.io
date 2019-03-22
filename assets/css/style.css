@@ -326,6 +326,22 @@ label button[type=submit] {
 }
 /* Fim dos ajustes para o layout das sessões */
 
+/* Ajustes para sessão de comentários */
+.comments {
+  padding: 0 11%;
+}
+
+@media only screen and (max-width: 600px) {
+  .comments {
+    padding: 0;
+  }
+}
+
+.comments h3 {
+  font-size: 2rem;
+}
+/* Fim dos ajustes para a sessão de comentários */
+
 /* Ajustes para o rodapé */
 .page-footer .row {
   margin-bottom: 0;

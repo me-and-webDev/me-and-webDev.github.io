@@ -684,7 +684,27 @@ class="chip  green accent-4 ">
 
     
   </div>
-  
+  <div class="comments deep-purple-text">
+  <h3>Comentários</h3>
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+    this.language = "pt_BR";
+    this.page.url = "https://me-and-webdev.github.io/tutoriais/bananas";
+    this.page.identifier = "/tutoriais/bananas";
+  };
+
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://me-and-webdev.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</div>
 
   <div id="fab" class="fixed-action-btn hide-on-small-only">
   <a class="btn-floating btn-large deep-purple">
