@@ -3,16 +3,21 @@
 <head>
   <title>{{ page.title }}</title>
   <meta charset="utf-8">
+  {% if page.noindex %}
+    <meta name="robots" content="noindex">
+  {% endif %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ page.introPhrase }}">
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#673ab7">
+  <meta name="theme-color" content="#673ab7">
   <meta property="og:site_name" content="Me and WebDev">
   <meta property="og:url" content="https://me-and-webdev.github.io{% if page.url != '/' %}{{ page.url }}{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.introPhrase }}">
+  <meta property="og:description" content="{{ page.description }}">
   <meta property="og:image" content="{{ page.image }}">
   <meta property="fb:app_id" content="252554985626178">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
