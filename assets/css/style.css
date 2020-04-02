@@ -266,6 +266,10 @@ label button[type=submit] {
   display: flex;
   justify-content: center;
 }
+
+code {
+  font-size: .7em;
+}
 /* Fim dos ajustes para posts */
 
 /* Ajustes para o compartilhamento */
